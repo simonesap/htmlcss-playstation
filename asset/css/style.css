@@ -1,9 +1,19 @@
 .fs_05{
-    font-size:0,5rem;
+    font-size:0,5em;
 }
 .w-10{
     width:10%;
 }
 .w-20{
     width:20%;
+}
+/* Hero */
+.z_index{
+    z-index: 1;
+}
+.z_index--{
+    z-index: -1;
+}
+.bg-orange_custom{
+    background-color: #cd3d0f;
 }

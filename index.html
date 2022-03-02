@@ -11,9 +11,11 @@
 </head>
 <body>
     <!--Header-->
-    <header class="fixed-top">
-        <div class="bg-dark text-end"><img class="w-10 me-2 my-3" src="./asset/img/sony_logo.svg" alt=""></div>
-        <nav class="mx-2 navbar navbar-expand-lg navbar-light bg-custom-b">
+    <header class="fixed-top h-15vh bg-light">
+        <div class="h-5vh bg-dark py-3 px-2 d-flex align-items-center justify-content-end">
+            <img class="w_10" src="./asset/img/sony_logo.svg" alt="logo">
+        </div>
+        <nav class="container-fluid h-10vh mx-2 navbar navbar-expand-lg navbar-light bg-custom-b">
             <a class="navbar-brand text-uppercase" href="#"><img src="./asset/img/play_logo.svg" alt=""></a>
             <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,75 +23,261 @@
             <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <div class="dropdown text-capitalize">
-                            <button class="btn d-flex flex-wrap-nowrap align-items-center text-capitalize text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="fs_05">giochi</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown text-capitalize">
-                            <button class="btn d-flex flex-wrap-nowrap align-items-center text-capitalize text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="fs_05">hardware</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown text-capitalize">
-                            <button class="btn d-flex flex-wrap-nowrap align-items-center text-capitalize text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="fs_05">servizi</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown text-capitalize">
-                            <button class="btn d-flex flex-wrap-nowrap align-items-center text-capitalize text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="fs_05">novità</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item w-100">
                         <div class="dropdown">
-                            <button class="btn d-flex flex-wrap-nowrap text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="text-left"><span class="text-uppercase d-inline">f</span>ai acquisti</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5 text-capitalize">giochi</span><i class="ms-2 fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
                         </div>
                     </li>
-                    <li class="nav-item w-25">
-                        <div class="dropdown text-capitalize">
-                            <button class="btn d-flex flex-wrap-nowrap align-items-center text-capitalize text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="fs_05">supporto</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5 text-capitalize">hardware</span><i class="ms-2 fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5 text-capitalize">servizi</span><i class="ms-2 fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5 text-capitalize">novità</span><i class="ms-2 fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5 text-capitalize"><span class="text-uppercase d-inline">f</span>ai acquisti</span><i class="ms-2 fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5 text-capitalize">supporto</span><i class="ms-2 fs-6 d-inline fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
                         </div>
                     </li>
                 </ul>
@@ -97,19 +285,50 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <div class="dropdown text-capitalize">
-                            <button class="btn d-flex flex-wrap-nowrap align-items-center text-capitalize text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="fs_05">my <span class="text-uppercase">pl</span>ay<span class="text-uppercase">s</span>tation</span><i class="ms-2 fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fs-5"><span class="text-uppercase">m</span>y<span class="text-uppercase">p</span>lay<span class="text-uppercase">s</span>tation</span><i class="ms-2 fs-6 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="d-flex flex-row">
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 5</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 4</span>
+                                    </a>
+                                    <a class="dropdown-item d-flex flex-column justify-content-end" href="#">
+                                        <img class="w-50" src="./asset/img/play-menu-ico.png" alt="playstation">
+                                        <span class="text-capitalize">playstation 3</span>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <ul class="d-flex flex-row justify-content-around">
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none text-dark" href="#">
+                                                <span class="text-capitalize fs-6">link novità</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>         
+                            </ul> 
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="mx-3 p-2 text-decoration-none text-capitalize bg-dark border text-white rounded-pill font-weight-bold" href="#">accedi</a>
+                    <li class="nav-item mt-1 align-middle">
+                        <button type="button" class="btn fs-5 btn-dark text-capitalize bg-dark border text-white rounded-pill font-weight-bold">accedi</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-capitalize" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -118,31 +337,134 @@
             </div>
         </nav>
     </header>
-    <!--Hero-->
-    <div class="hero position-relative z_index">
-        <img class="img-fluid position-absolute z_index--" src="./asset/img/returnal-listing-thumb-01-ps5.jpg" alt="returnal">
-        <div class="container text-start">
-            <h3 class="text-capitalize">rompi il cerchio</h3>
-            <p class="text-capitalize">rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su <span class="text-uppercase">ps5</span></p>
-            <a class="mx-3 p-2 text-decoration-none bg-orange_custom text-capitalize rounded-pill font-weight-bold text-white" href="#">acquista ora</a>
-        </div>
-        </div>
     <!--Main-->
-    <main>
+    <main class="z_index margin_top_8">
+        <!--Hero-->
+        <section id="hero" class="d-flex align-items-end py-5">
+            <div class="container">
+                <img class="img-fluid py-2 w-25" src="./asset/img/returnal-hero-banner-logo.png" alt="returnal">
+                <h3 class="text-capitalize py-2 text-white">rompi il cerchio</h3>
+                <p class="text-capitalize text-white py-2 w-50">rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su <span class="text-uppercase">ps5</span></p>
+                <button type="button" class="btn bg-orange_custom text-capitalize rounded-pill font-weight-bold text-white">acquista ora</button>
+        </section>
         <!--Section-1-->
-        <section class="container">
+        <section class="container pt-5">
             <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-12">
-                    <img src="./asset/img/returnal-hero-banner-logo.png" alt="">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid rounded-3" src="./asset/img/returnal-listing-thumb-01-ps5.jpg" alt="returnal">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid rounded-3" src="./asset/img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet-and-clank">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid rounded-3" src="./asset/img/returnal-listing-thumb-01-ps5.jpg" alt="returnal">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid rounded-3" src="./asset/img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet-and-clank">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid rounded-3" src="./asset/img/returnal-listing-thumb-01-ps5.jpg" alt="returnal">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid rounded-3" src="../asset/img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet-and-clank">
                 </div>
             </div>
         </section>
         <!--Section-2-->
-        <section></section>
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <span class="text-uppercase text-primary fw-bold">play as no limits</span>
+                    <h2 class="fw-bold"><span class="text-uppercase">e</span>cco la <span class="text-uppercase">p</span>lay<span class="text-uppercase">s</span>tation 5</h2>
+                    <p class="fw-bold"><span class="text-uppercase">t</span>uffati in nuove possibilità di gioco completamente inaspettate</p>
+                </div>
+                <div class="row align-items-center pt-5">
+                    <div class="col-12 col-md-6">
+                        <h2 class="fw-bold text-capitalize">console play<span class="text-uppercase">s</span>tation 5</h2>
+                        <p class="fw-bold"><span class="text-uppercase">s</span>perimenta la nuova generazione di incredibili giochi.<span class="text-uppercase">p</span>lay<span class="text-uppercase">s</span>tation</p>
+                        <button type="button" class="btn btn-primary text-capitalize rounded-pill font-weight-bold text-white">maggiori informazioni</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="./asset/img/playstation-5-thumb.png" alt="playstation + pad">
+                    </div>
+                </div>
+                <div class="row row-cols-3 row-cols-md-5">
+                    <div class="col text-center border-b py-3">
+                        <img class="img-fluid w-75 pt-5 opa-05 opa-none" src="./asset/img/playstation-5-thumb.png" alt="playstation + pad">
+                        <span class="text-capitalize fw-bold">console <span class="text-uppercase">ps5</span></span>
+                    </div>
+                    <div class="col text-center border-b mt-5 d-flex flex-column align-items-center justify-content-end py-3">
+                        <img class="img-fluid w-75 opa-05 opa-none" src="./asset/img/joypad-thumb.png" alt="controller">
+                        <span class="fw-bold"><span class="text-uppercase">c</span>ontroller wireless <span class="text-uppercase">d</span>ual<span class="text-uppercase">s</span>ense<i class="fa-solid fa-trademark fs-7"></i></span>
+                    </div>
+                    <div class="col text-center border-b d-flex flex-column align-items-center justify-content-end py-3">
+                        <img class="img-fluid pb-3 w-75 opa-05 opa-none" src="./asset/img/headset-thumb.png" alt="headset">
+                        <span class="text-capitalize fw-bold"><span class="text-uppercase">c</span>uffie wireless con microfono <span class="text-uppercase">pulse</span> 3<i class="fa-solid fa-trademark fs-7"></i></span>
+                    </div>
+                    <div class="col text-center border-b py-3">
+                        <img class="img-fluid w-75 pt-5 opa-05 opa-none" src="./asset/img/remote-thumb.png" alt="remote">
+                        <span class="text-capitalize fw-bold">telecomando media</span>
+                    </div>
+                    <div class="col text-center border-b py-3">
+                        <img class="img-fluid w-75 pt-5 opa-05 opa-none" src="./asset/img/camera-thumb.jpg" alt="camera">
+                        <span class="text-capitalize fw-bold">telecamera <span class="text-uppercase">hd</span>/span>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--Section-3-->
-        <section></section>
+        <section id="it-take-two" class="d-flex align-items-end py-5">
+            <div class="container text-start">
+                <img class="img-fluid w-25" src="./asset/img/it-takes-two-logo.png" alt="returnal">
+                <h3 class="text-white w-25"><span class="text-uppercase">u</span>n' avventura cooperativa selvaggia ti attende</h3>
+                <p class="text-capitalize text-white w-50">rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascientifico, disponibile in esclusiva su <span class="text-uppercase">ps5</span></p>
+                <button type="button" class="btn bg-orange_custom text-capitalize rounded-pill font-weight-bold text-white">acquista ora</button>
+        </section>
         <!--Section-4-->
-        <section></section>
+        <section class="bg-black_custom  py-5">
+            <div class="container">
+                <h3 class="pt-1 text-white fw-bold"><span class="text-uppercase">n</span>uove uscite</h3>
+                <p class="py-1 text-white fw-bold"><span class="text-uppercase">g</span>iochi incredibili per <span class="text-uppercase">ps4</span>e<span class="text-uppercase">ps5</span> disponibili ora</p>
+                 <div class="row">   
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img  class="img-fluid rounded-3" src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="toni hawks">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash bandicot">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="toni hawks">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash bandicot">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="toni hawks">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash bandicot">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img  class="img-fluid rounded-3" src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="toni hawks">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash bandicot">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="toni hawks">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash bandicot">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="toni hawks">
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-3" src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash bandicot">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--Section-5-->
         <section></section>
         <!--Section-6-->

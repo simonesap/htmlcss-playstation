@@ -1,19 +1,63 @@
-.fs_05{
-    font-size:0,5em;
-}
-.w-10{
+/* Utility */
+.w_10{
     width:10%;
 }
-.w-20{
+.w_20{
     width:20%;
 }
-/* Hero */
 .z_index{
-    z-index: 1;
-}
-.z_index--{
-    z-index: -1;
+    z-index: 2;
 }
 .bg-orange_custom{
     background-color: #cd3d0f;
+}
+.bg-black_custom{
+    background-color: #1f1e1e;
+}
+.h-5vh{
+    height: 5vh;
+}
+.h-10vh{
+    height: 10vh;
+}
+.h-15vh{
+    height: 15vh;
+}
+.margin_top_8{
+    margin-top: 8%;
+}
+/* Section */
+#hero{
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+}
+#it-take-two{
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Custom-Bootstrap */
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0);
+}
+.fs-5 {
+    font-size: 0.9rem!important;
+}
+.fs-6 {
+    font-size: 0.7rem!important;
+}
+.fs-7 {
+    font-size: 0.5rem!important;
+}
+.border-b:hover{
+    border-bottom: 3px solid #0180ff!important;
+}
+.opa-05{
+    opacity: 0.5;
+}
+.opa-none:hover{
+    opacity: 1;
 }

@@ -14,6 +14,12 @@
 .bg-black_custom{
     background-color: #1f1e1e;
 }
+.bg-gray_custom{
+    background-color: #bfbdbb;
+}
+.bg-light-gray_custom{
+    background-color: #d8dadd;
+}
 .h-5vh{
     height: 5vh;
 }

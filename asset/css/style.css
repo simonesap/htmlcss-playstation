@@ -1,12 +1,12 @@
 /* Utility */
+.w-24px{
+    width: 14px;
+}
 .w_10{
     width:10%;
 }
 .w_20{
     width:20%;
-}
-.z_index{
-    z-index: 2;
 }
 .bg-orange_custom{
     background-color: #cd3d0f;
@@ -20,6 +20,9 @@
 .bg-light-gray_custom{
     background-color: #d8dadd;
 }
+.bg-blue_custom{
+    background-color: #01429c; 
+}
 .bg-avengers_custom{
     background-color: #161c3b;
 }
@@ -32,8 +35,27 @@
 .h-15vh{
     height: 15vh;
 }
+.h_40{
+    height: 40%;
+}
+.h_60{
+    height: 60%;
+}
 .margin_top_8{
     margin-top: 8%;
+}
+.border-b:hover{
+    border-bottom: 3px solid #0180ff!important;
+}
+.opa-05{
+    opacity: 0.5;
+}
+.opa-none:hover{
+    opacity: 1;
+}
+.container_custom_sm{
+    max-width: 700px;
+    margin: auto;
 }
 /* Section */
 #hero{
@@ -60,13 +82,4 @@
 }
 .fs-7 {
     font-size: 0.5rem!important;
-}
-.border-b:hover{
-    border-bottom: 3px solid #0180ff!important;
-}
-.opa-05{
-    opacity: 0.5;
-}
-.opa-none:hover{
-    opacity: 1;
 }

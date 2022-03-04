@@ -117,13 +117,16 @@ html{
 .fa-angle-up{
     display: none;
 }
-
 .nav-link:hover .fa-angle-up,
 header:hover .dropdown_menu{
     display: inline;
 } 
-
 .nav-link:hover .fa-angle-down{
     display: none;
 } 
+
+.button_custom:hover{
+    border: solid black 3.5px;
+    border-radius: 50px;
+}
 

@@ -1,6 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 /* Utility */
 .w-24px{
     width: 14px;
+}
+.w_5{
+    width:10%;
 }
 .w_10{
     width:10%;
@@ -63,6 +69,13 @@
 .border_radius{
     border-radius: 20px;
 }
+.border_custom{   
+    padding: 1%;
+    border: #01429c 5px solid;
+}
+.list_style_type{
+    list-style-type: disc;
+}
 /* Section */
 #hero{
     background-image: url('../img/jumbo-bg.png');
@@ -99,7 +112,18 @@
 .cards:hover{
     padding-top: 0%!important;
 }
-.border_custom{   
-    padding: 1%;
-    border: #01429c 5px solid;
+
+.dropdown_menu,
+.fa-angle-up{
+    display: none;
 }
+
+.nav-link:hover .fa-angle-up,
+header:hover .dropdown_menu{
+    display: inline;
+} 
+
+.nav-link:hover .fa-angle-down{
+    display: none;
+} 
+
